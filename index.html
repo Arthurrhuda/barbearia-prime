@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Barbearia Prime | Estilo e tradição</title>
+
+<meta name="description"
+content="Barbearia Prime — cortes masculinos, barba e acabamento profissional.">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* MENU */
+
+header {
+    background: #080808;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+/* SEÇÕES */
+
+section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 80px 20px;
+}
+
+/* INÍCIO */
+
+.hero {
+    min-height: 85vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.75),
+        rgba(0,0,0,0.75)
+    ),
+    linear-gradient(135deg,#191919,#050505);
+}
+
+.hero h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 600px;
+    font-size: 19px;
+    color: #ddd;
+    margin-bottom: 30px;
+}
+
+.botao {
+    display: inline-block;
+
+    background: #fff;
+    color: #111;
+
+    padding: 14px 25px;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+.botao:hover {
+    transform: translateY(-2px);
+}
+
+/* SERVIÇOS */
+
+.titulo {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 45px;
+}
+
+.servicos {
+    display: grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap: 20px;
+}
+
+.card {
+    background: #1d1d1d;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.preco {
+    display: block;
+
+    margin-top: 20px;
+
+    font-size: 22px;
+
+    font-weight: bold;
+}
+
+/* SOBRE */
+
+.sobre {
+    text-align: center;
+}
+
+.sobre p {
+    max-width: 700px;
+
+    margin: auto;
+
+    color: #ddd;
+}
+
+/* CONTATO */
+
+.contato {
+    text-align: center;
+}
+
+.contato p {
+    margin: 10px 0;
+
+    color: #ddd;
+}
+
+/* RODAPÉ */
+
+footer {
+    background: #080808;
+
+    text-align: center;
+
+    padding: 30px 20px;
+
+    color: #999;
+}
+
+/* CELULAR */
+
+@media(max-width:700px) {
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .servicos {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="logo">
+BARBEARIA PRIME
+</div>
+
+<nav>
+
+<a href="#inicio">Início</a>
+
+<a href="#servicos">Serviços</a>
+
+<a href="#sobre">Sobre</a>
+
+<a href="#contato">Contato</a>
+
+</nav>
+
+</header>
+
+
+<main>
+
+
+<section
+id="inicio"
+class="hero">
+
+<h1>
+Seu estilo começa aqui.
+</h1>
+
+<p>
+Cortes modernos, barba e acabamento profissional
+em um ambiente pensado para você.
+</p>
+
+<a
+class="botao"
+href="#contato">
+
+AGENDAR HORÁRIO
+
+</a>
+
+</section>
+
+
+<section
+id="servicos">
+
+<h2 class="titulo">
+Nossos serviços
+</h2>
+
+
+<div class="servicos">
+
+
+<div class="card">
+
+<h3>
+Corte masculino
+</h3>
+
+<p>
+Corte personalizado de acordo
+com seu estilo.
+</p>
+
+<span class="preco">
+R$ 40
+</span>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+Barba
+</h3>
+
+<p>
+Modelagem e acabamento
+profissional.
+</p>
+
+<span class="preco">
+R$ 30
+</span>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+Corte + Barba
+</h3>
+
+<p>
+O combo completo para renovar
+seu visual.
+</p>
+
+<span class="preco">
+R$ 60
+</span>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<section
+id="sobre"
+class="sobre">
+
+<h2 class="titulo">
+Sobre nós
+</h2>
+
+<p>
+
+A Barbearia Prime nasceu para oferecer
+cortes de qualidade, atendimento próximo
+e uma experiência diferenciada.
+
+</p>
+
+</section>
+
+
+<section
+id="contato"
+class="contato">
+
+<h2 class="titulo">
+Agende seu horário
+</h2>
+
+<p>
+Segunda a sábado — 09:00 às 19:00
+</p>
+
+<p>
+Rua Exemplo, 123 — Caxias do Sul/RS
+</p>
+
+<br>
+
+<a
+class="botao"
+href="https://wa.me/5554999999999">
+
+FALAR NO WHATSAPP
+
+</a>
+
+</section>
+
+
+</main>
+
+
+<footer>
+
+<p>
+© 2026 Barbearia Prime
+</p>
+
+<p>
+Projeto demonstrativo
+</p>
+
+</footer>
+
+
+</body>
+
+</html>
